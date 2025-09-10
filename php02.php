@@ -7,6 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
+    <h1>Harjutus 7.7</h1>
+    <!-- Harjutus 07
+    10.09.25
+    Marcus Krutto -->
+    <!-- uudis -->
+
+    <?php
+    function headmotted(){
+      $alused = array("Jüri", "Mari", "Uku");
+      $oeldised = array("armastab", "viskab", "tõmbab");
+      $sihitised = array("mind.", "sind.", "teda.");
+      echo array_rand(array_flip($alused))." ".array_rand(array_flip($oeldised))." ".array_rand(array_flip($sihitised));
+    }
+    headmotted();
+    ?>
     <h1>Harjutus 7.6</h1>
     <!-- Harjutus 07
     10.09.25
@@ -31,9 +46,9 @@
         } else{
           echo " Mees ,";
         }
-        $paev = $ik = substr($ikood,5,6);
-        $kuu = $ik = substr($ikood,3,5);
-        $aasta = $ik = substr($ikood,1,2);
+        $paev = substr($ikood,5,2);
+        $kuu = substr($ikood,3,2);
+        $aasta = substr($ikood,1,2);
         echo "Sünni aeg: $paev.$kuu.$aasta";
       }
     }
