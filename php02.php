@@ -31,7 +31,7 @@
     <?php
     function isikukood(){
       echo'    <form action="#" method="get">
-        Sisesta idkood <input type="number" name="idkood" required><br>
+        Sisesta isikukood <input type="number" name="idkood" required><br>
         <input type="submit" value="Kontrolli">
     </form>';
       if(isset($_GET["idkood"])){
